@@ -8,12 +8,6 @@ function lookup(title){
     dataType: "json",
     success: function (data, textStatus, jqXHR) {
       
-      // if (data.error.code === "missingtitle") {
-      //   alert("No results found!");
-      //   return;
-      // }
-
-
       var markup = data.parse.text["*"];
 
       var blurb = $('<div></div>').html(markup);
@@ -36,9 +30,7 @@ function lookup(title){
       for (var i = 0; i < temparray.length; i++) {
         for (var j = 0; j < temparray[i].length; j++) {
           
-
           textarray.push(temparray[i][j]);
-
 
         }
       }
@@ -84,8 +76,6 @@ function play(textarray) {
   }
 
   myLoop(textarray);
-
-
 
 }
 // *************************************

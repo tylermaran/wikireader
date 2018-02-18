@@ -38,6 +38,7 @@ h1 {
 #playDiv {
 	height: 200px;
 	margin-top: 75px; 
+	background-color: red;
 }
 
 #playButton {
